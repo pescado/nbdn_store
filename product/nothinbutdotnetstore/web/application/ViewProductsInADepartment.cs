@@ -1,12 +1,19 @@
-using nothinbutdotnetstore.domain;
+﻿using nothinbutdotnetstore.domain;
+using nothinbutdotnetstore.domain.stubs;
 using nothinbutdotnetstore.web.core;
+using nothinbutdotnetstore.web.core.stubs;
 
-namespace nothinbutdotnetstore.specs.web
+namespace nothinbutdotnetstore.web.application
 {
     public class ViewProductsInADepartment : ApplicationCommand
     {
         ResponseEngine response_engine;
         ProductRepository product_repository;
+
+    	public ViewProductsInADepartment():this(new StubResponseEngine(), new StubProductRepository())
+    	{
+    		
+    	}
 
         public ViewProductsInADepartment(ResponseEngine response_engine, ProductRepository product_repository)
         {

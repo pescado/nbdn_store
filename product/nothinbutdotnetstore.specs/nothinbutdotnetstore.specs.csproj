@@ -98,6 +98,7 @@
     <Compile Include="web\ViewFactorySpecs.cs" />
     <Compile Include="web\ViewMainDeparmentsInTheStoreSpecs.cs" />
     <Compile Include="web\ViewProductsInADepartmentSpecs.cs" />
+    <Compile Include="web\ViewRegistrySpecs.cs" />
     <Compile Include="web\WebCommandRegistrySpecs.cs" />
     <Compile Include="web\WebCommandSpecs.cs" />
   </ItemGroup>
